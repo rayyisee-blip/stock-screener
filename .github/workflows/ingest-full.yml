@@ -1,0 +1,34 @@
+# Refreshes the ENTIRE universe, including ETFs and indices - the heaviest
+# scope. Runs once a week, Saturday at 03:00 UTC, when no target market is
+# trading, so it doesn't compete with the daily/watchlist runs for the same
+# free API rate limits.
+name: Ingest - Full
+
+on:
+  schedule:
+    - cron: "0 3 * * 6"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  ingest-full:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the full ingest
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python -m ingest.run --scope full

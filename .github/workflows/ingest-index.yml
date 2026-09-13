@@ -1,0 +1,35 @@
+# Refreshes every individual stock in the universe (not ETFs/indices) -
+# the medium scope. Runs once a day, Monday-Friday, at 21:30 UTC - after
+# the US market closes (16:00 ET, which is 20:00 UTC during daylight saving
+# or 21:00 UTC in standard time), with a buffer so the day's final prices
+# have settled.
+name: Ingest - Index
+
+on:
+  schedule:
+    - cron: "30 21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  ingest-index:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run the index ingest
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: python -m ingest.run --scope index

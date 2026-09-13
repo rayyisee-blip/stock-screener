@@ -1,0 +1,615 @@
+ticker,name,market,sector,is_index,is_etf,source_index
+MMM,3M,US,Industrials,false,false,SP500
+AOS,A. O. Smith,US,Industrials,false,false,SP500
+ABT,Abbott Laboratories,US,Health Care,false,false,SP500
+ABBV,AbbVie,US,Health Care,false,false,SP500
+ACN,Accenture,US,Information Technology,false,false,SP500
+ADBE,Adobe Inc.,US,Information Technology,false,false,SP500
+AMD,Advanced Micro Devices,US,Information Technology,false,false,SP500
+AES,AES Corporation,US,Utilities,false,false,SP500
+AFL,Aflac,US,Financials,false,false,SP500
+A,Agilent Technologies,US,Health Care,false,false,SP500
+APD,Air Products,US,Materials,false,false,SP500
+ABNB,Airbnb,US,Consumer Discretionary,false,false,SP500
+AKAM,Akamai Technologies,US,Information Technology,false,false,SP500
+ALB,Albemarle Corporation,US,Materials,false,false,SP500
+ARE,Alexandria Real Estate Equities,US,Real Estate,false,false,SP500
+ALGN,Align Technology,US,Health Care,false,false,SP500
+ALLE,Allegion,US,Industrials,false,false,SP500
+LNT,Alliant Energy,US,Utilities,false,false,SP500
+ALL,Allstate,US,Financials,false,false,SP500
+GOOGL,Alphabet Inc. (Class A),US,Communication Services,false,false,SP500
+GOOG,Alphabet Inc. (Class C),US,Communication Services,false,false,SP500
+MO,Altria,US,Consumer Staples,false,false,SP500
+AMZN,Amazon,US,Consumer Discretionary,false,false,SP500
+AMCR,Amcor,US,Materials,false,false,SP500
+AEE,Ameren,US,Utilities,false,false,SP500
+AEP,American Electric Power,US,Utilities,false,false,SP500
+AXP,American Express,US,Financials,false,false,SP500
+AIG,American International Group,US,Financials,false,false,SP500
+AMT,American Tower,US,Real Estate,false,false,SP500
+AWK,American Water Works,US,Utilities,false,false,SP500
+AMP,Ameriprise Financial,US,Financials,false,false,SP500
+AME,Ametek,US,Industrials,false,false,SP500
+AMGN,Amgen,US,Health Care,false,false,SP500
+APH,Amphenol,US,Information Technology,false,false,SP500
+ADI,Analog Devices,US,Information Technology,false,false,SP500
+AON,Aon plc,US,Financials,false,false,SP500
+APA,APA Corporation,US,Energy,false,false,SP500
+APO,Apollo Global Management,US,Financials,false,false,SP500
+AAPL,Apple Inc.,US,Information Technology,false,false,SP500
+AMAT,Applied Materials,US,Information Technology,false,false,SP500
+APP,AppLovin,US,Communication Services,false,false,SP500
+APTV,Aptiv,US,Consumer Discretionary,false,false,SP500
+ACGL,Arch Capital Group,US,Financials,false,false,SP500
+ADM,Archer Daniels Midland,US,Consumer Staples,false,false,SP500
+ARES,Ares Management,US,Financials,false,false,SP500
+ANET,Arista Networks,US,Information Technology,false,false,SP500
+AJG,Arthur J. Gallagher & Co.,US,Financials,false,false,SP500
+AIZ,Assurant,US,Financials,false,false,SP500
+T,AT&T,US,Communication Services,false,false,SP500
+ATO,Atmos Energy,US,Utilities,false,false,SP500
+ADSK,Autodesk,US,Information Technology,false,false,SP500
+ADP,Automatic Data Processing,US,Industrials,false,false,SP500
+AZO,AutoZone,US,Consumer Discretionary,false,false,SP500
+AVY,Avery Dennison,US,Materials,false,false,SP500
+AXON,Axon Enterprise,US,Industrials,false,false,SP500
+BKR,Baker Hughes,US,Energy,false,false,SP500
+BALL,Ball Corporation,US,Materials,false,false,SP500
+BAC,Bank of America,US,Financials,false,false,SP500
+BAX,Baxter International,US,Health Care,false,false,SP500
+BDX,Becton Dickinson,US,Health Care,false,false,SP500
+BRK-B,Berkshire Hathaway,US,Financials,false,false,SP500
+BBY,Best Buy,US,Consumer Discretionary,false,false,SP500
+TECH,Bio-Techne,US,Health Care,false,false,SP500
+BIIB,Biogen,US,Health Care,false,false,SP500
+BLK,BlackRock,US,Financials,false,false,SP500
+BX,Blackstone Inc.,US,Financials,false,false,SP500
+XYZ,"Block, Inc.",US,Financials,false,false,SP500
+BNY,BNY Mellon,US,Financials,false,false,SP500
+BA,Boeing,US,Industrials,false,false,SP500
+BKNG,Booking Holdings,US,Consumer Discretionary,false,false,SP500
+BSX,Boston Scientific,US,Health Care,false,false,SP500
+BMY,Bristol Myers Squibb,US,Health Care,false,false,SP500
+AVGO,Broadcom,US,Information Technology,false,false,SP500
+BR,Broadridge Financial Solutions,US,Industrials,false,false,SP500
+BRO,Brown & Brown,US,Financials,false,false,SP500
+BF-B,Brown–Forman,US,Consumer Staples,false,false,SP500
+BLDR,Builders FirstSource,US,Industrials,false,false,SP500
+BG,Bunge Global,US,Consumer Staples,false,false,SP500
+BXP,"BXP, Inc.",US,Real Estate,false,false,SP500
+CHRW,C.H. Robinson,US,Industrials,false,false,SP500
+CDNS,Cadence Design Systems,US,Information Technology,false,false,SP500
+CPT,Camden Property Trust,US,Real Estate,false,false,SP500
+COF,Capital One,US,Financials,false,false,SP500
+CAH,Cardinal Health,US,Health Care,false,false,SP500
+CCL,Carnival Corporation,US,Consumer Discretionary,false,false,SP500
+CARR,Carrier Global,US,Industrials,false,false,SP500
+CVNA,Carvana,US,Consumer Discretionary,false,false,SP500
+CASY,Casey's,US,Consumer Staples,false,false,SP500
+CAT,Caterpillar Inc.,US,Industrials,false,false,SP500
+CBOE,Cboe Global Markets,US,Financials,false,false,SP500
+CBRE,CBRE Group,US,Real Estate,false,false,SP500
+CDW,CDW Corporation,US,Information Technology,false,false,SP500
+COR,Cencora,US,Health Care,false,false,SP500
+CNC,Centene Corporation,US,Health Care,false,false,SP500
+CNP,CenterPoint Energy,US,Utilities,false,false,SP500
+CF,CF Industries,US,Materials,false,false,SP500
+CRL,Charles River Laboratories,US,Health Care,false,false,SP500
+SCHW,Charles Schwab Corporation,US,Financials,false,false,SP500
+CHTR,Charter Communications,US,Communication Services,false,false,SP500
+CVX,Chevron Corporation,US,Energy,false,false,SP500
+CMG,Chipotle Mexican Grill,US,Consumer Discretionary,false,false,SP500
+CB,Chubb Limited,US,Financials,false,false,SP500
+CHD,Church & Dwight,US,Consumer Staples,false,false,SP500
+CIEN,Ciena,US,Information Technology,false,false,SP500
+CI,Cigna,US,Health Care,false,false,SP500
+CINF,Cincinnati Financial,US,Financials,false,false,SP500
+CTAS,Cintas,US,Industrials,false,false,SP500
+CSCO,Cisco,US,Information Technology,false,false,SP500
+C,Citigroup,US,Financials,false,false,SP500
+CFG,Citizens Financial Group,US,Financials,false,false,SP500
+CLX,Clorox,US,Consumer Staples,false,false,SP500
+CME,CME Group,US,Financials,false,false,SP500
+CMS,CMS Energy,US,Utilities,false,false,SP500
+KO,Coca-Cola Company (The),US,Consumer Staples,false,false,SP500
+CTSH,Cognizant,US,Information Technology,false,false,SP500
+COHR,Coherent Corp.,US,Information Technology,false,false,SP500
+COIN,Coinbase,US,Financials,false,false,SP500
+CL,Colgate-Palmolive,US,Consumer Staples,false,false,SP500
+CMCSA,Comcast,US,Communication Services,false,false,SP500
+FIX,Comfort Systems USA,US,Industrials,false,false,SP500
+COP,ConocoPhillips,US,Energy,false,false,SP500
+ED,Consolidated Edison,US,Utilities,false,false,SP500
+STZ,Constellation Brands,US,Consumer Staples,false,false,SP500
+CEG,Constellation Energy,US,Utilities,false,false,SP500
+COO,Cooper Companies (The),US,Health Care,false,false,SP500
+CPRT,Copart,US,Industrials,false,false,SP500
+GLW,Corning Inc.,US,Information Technology,false,false,SP500
+CPAY,Corpay,US,Financials,false,false,SP500
+CTVA,Corteva,US,Materials,false,false,SP500
+CSGP,CoStar Group,US,Real Estate,false,false,SP500
+COST,Costco,US,Consumer Staples,false,false,SP500
+CRH,CRH plc,US,Materials,false,false,SP500
+CRWD,CrowdStrike,US,Information Technology,false,false,SP500
+CCI,Crown Castle,US,Real Estate,false,false,SP500
+CSX,CSX Corporation,US,Industrials,false,false,SP500
+CMI,Cummins,US,Industrials,false,false,SP500
+CVS,CVS Health,US,Health Care,false,false,SP500
+DHR,Danaher Corporation,US,Health Care,false,false,SP500
+DRI,Darden Restaurants,US,Consumer Discretionary,false,false,SP500
+DDOG,Datadog,US,Information Technology,false,false,SP500
+DVA,DaVita,US,Health Care,false,false,SP500
+DECK,Deckers Brands,US,Consumer Discretionary,false,false,SP500
+DE,Deere & Company,US,Industrials,false,false,SP500
+DELL,Dell Technologies,US,Information Technology,false,false,SP500
+DAL,Delta Air Lines,US,Industrials,false,false,SP500
+DVN,Devon Energy,US,Energy,false,false,SP500
+DXCM,Dexcom,US,Health Care,false,false,SP500
+FANG,Diamondback Energy,US,Energy,false,false,SP500
+DLR,Digital Realty,US,Real Estate,false,false,SP500
+DG,Dollar General,US,Consumer Staples,false,false,SP500
+DLTR,Dollar Tree,US,Consumer Staples,false,false,SP500
+D,Dominion Energy,US,Utilities,false,false,SP500
+DPZ,Domino's,US,Consumer Discretionary,false,false,SP500
+DASH,DoorDash,US,Consumer Discretionary,false,false,SP500
+DOV,Dover Corporation,US,Industrials,false,false,SP500
+DOW,Dow Inc.,US,Materials,false,false,SP500
+DHI,D. R. Horton,US,Consumer Discretionary,false,false,SP500
+DTE,DTE Energy,US,Utilities,false,false,SP500
+DUK,Duke Energy,US,Utilities,false,false,SP500
+DD,DuPont,US,Industrials,false,false,SP500
+ETN,Eaton Corporation,US,Industrials,false,false,SP500
+EBAY,eBay Inc.,US,Consumer Discretionary,false,false,SP500
+ECHO,EchoStar,US,Communication Services,false,false,SP500
+ECL,Ecolab,US,Materials,false,false,SP500
+EIX,Edison International,US,Utilities,false,false,SP500
+EW,Edwards Lifesciences,US,Health Care,false,false,SP500
+ELV,Elevance Health,US,Health Care,false,false,SP500
+EME,Emcor,US,Industrials,false,false,SP500
+EMR,Emerson Electric,US,Industrials,false,false,SP500
+ETR,Entergy,US,Utilities,false,false,SP500
+EOG,EOG Resources,US,Energy,false,false,SP500
+EQT,EQT Corporation,US,Energy,false,false,SP500
+EFX,Equifax,US,Industrials,false,false,SP500
+EQIX,Equinix,US,Real Estate,false,false,SP500
+ERIE,Erie Indemnity,US,Financials,false,false,SP500
+ESS,Essex Property Trust,US,Real Estate,false,false,SP500
+EL,Estée Lauder Companies (The),US,Consumer Staples,false,false,SP500
+EG,Everest Group,US,Financials,false,false,SP500
+EVRG,Evergy,US,Utilities,false,false,SP500
+ES,Eversource Energy,US,Utilities,false,false,SP500
+EXC,Exelon,US,Utilities,false,false,SP500
+EXE,Expand Energy,US,Energy,false,false,SP500
+EXPE,Expedia Group,US,Consumer Discretionary,false,false,SP500
+EXPD,Expeditors International,US,Industrials,false,false,SP500
+EXR,Extra Space Storage,US,Real Estate,false,false,SP500
+XOM,ExxonMobil,US,Energy,false,false,SP500
+FFIV,"F5, Inc.",US,Information Technology,false,false,SP500
+FDS,FactSet,US,Financials,false,false,SP500
+FICO,Fair Isaac,US,Information Technology,false,false,SP500
+FAST,Fastenal,US,Industrials,false,false,SP500
+FRT,Federal Realty Investment Trust,US,Real Estate,false,false,SP500
+FDX,FedEx,US,Industrials,false,false,SP500
+FDXF,FedEx Freight,US,Industrials,false,false,SP500
+FERG,Ferguson Enterprises,US,Industrials,false,false,SP500
+FIS,Fidelity National Information Services,US,Financials,false,false,SP500
+FITB,Fifth Third Bancorp,US,Financials,false,false,SP500
+FSLR,First Solar,US,Information Technology,false,false,SP500
+FE,FirstEnergy,US,Utilities,false,false,SP500
+FISV,Fiserv,US,Financials,false,false,SP500
+FLEX,Flex Ltd.,US,Information Technology,false,false,SP500
+F,Ford Motor Company,US,Consumer Discretionary,false,false,SP500
+FTNT,Fortinet,US,Information Technology,false,false,SP500
+FTV,Fortive,US,Industrials,false,false,SP500
+FOXA,Fox Corporation (Class A),US,Communication Services,false,false,SP500
+FOX,Fox Corporation (Class B),US,Communication Services,false,false,SP500
+BEN,Franklin Resources,US,Financials,false,false,SP500
+FCX,Freeport-McMoRan,US,Materials,false,false,SP500
+GRMN,Garmin,US,Consumer Discretionary,false,false,SP500
+IT,Gartner,US,Information Technology,false,false,SP500
+GE,GE Aerospace,US,Industrials,false,false,SP500
+GEHC,GE HealthCare,US,Health Care,false,false,SP500
+GEV,GE Vernova,US,Industrials,false,false,SP500
+GEN,Gen Digital,US,Information Technology,false,false,SP500
+GNRC,Generac,US,Industrials,false,false,SP500
+GD,General Dynamics,US,Industrials,false,false,SP500
+GIS,General Mills,US,Consumer Staples,false,false,SP500
+GM,General Motors,US,Consumer Discretionary,false,false,SP500
+GPC,Genuine Parts Company,US,Consumer Discretionary,false,false,SP500
+GILD,Gilead Sciences,US,Health Care,false,false,SP500
+GPN,Global Payments,US,Financials,false,false,SP500
+GL,Globe Life,US,Financials,false,false,SP500
+GDDY,GoDaddy,US,Information Technology,false,false,SP500
+GS,Goldman Sachs,US,Financials,false,false,SP500
+HAL,Halliburton,US,Energy,false,false,SP500
+HIG,Hartford (The),US,Financials,false,false,SP500
+HAS,Hasbro,US,Consumer Discretionary,false,false,SP500
+HCA,HCA Healthcare,US,Health Care,false,false,SP500
+DOC,Healthpeak Properties,US,Real Estate,false,false,SP500
+HSIC,Henry Schein,US,Health Care,false,false,SP500
+HSY,Hershey Company (The),US,Consumer Staples,false,false,SP500
+HPE,Hewlett Packard Enterprise,US,Information Technology,false,false,SP500
+HLT,Hilton Worldwide,US,Consumer Discretionary,false,false,SP500
+HD,Home Depot (The),US,Consumer Discretionary,false,false,SP500
+HONA,Honeywell Aerospace,US,Industrials,false,false,SP500
+HON,Honeywell Technologies,US,Industrials,false,false,SP500
+HRL,Hormel Foods,US,Consumer Staples,false,false,SP500
+HST,Host Hotels & Resorts,US,Real Estate,false,false,SP500
+HWM,Howmet Aerospace,US,Industrials,false,false,SP500
+HPQ,HP Inc.,US,Information Technology,false,false,SP500
+HUBB,Hubbell Incorporated,US,Industrials,false,false,SP500
+HUM,Humana,US,Health Care,false,false,SP500
+HBAN,Huntington Bancshares,US,Financials,false,false,SP500
+HII,Huntington Ingalls Industries,US,Industrials,false,false,SP500
+IBM,IBM,US,Information Technology,false,false,SP500
+IEX,IDEX Corporation,US,Industrials,false,false,SP500
+IDXX,Idexx Laboratories,US,Health Care,false,false,SP500
+ITW,Illinois Tool Works,US,Industrials,false,false,SP500
+INCY,Incyte,US,Health Care,false,false,SP500
+IR,Ingersoll Rand,US,Industrials,false,false,SP500
+PODD,Insulet Corporation,US,Health Care,false,false,SP500
+INTC,Intel,US,Information Technology,false,false,SP500
+IBKR,Interactive Brokers,US,Financials,false,false,SP500
+ICE,Intercontinental Exchange,US,Financials,false,false,SP500
+IFF,International Flavors & Fragrances,US,Materials,false,false,SP500
+IP,International Paper,US,Materials,false,false,SP500
+INTU,Intuit,US,Information Technology,false,false,SP500
+ISRG,Intuitive Surgical,US,Health Care,false,false,SP500
+IVZ,Invesco,US,Financials,false,false,SP500
+INVH,Invitation Homes,US,Real Estate,false,false,SP500
+IQV,IQVIA,US,Health Care,false,false,SP500
+IRM,Iron Mountain,US,Real Estate,false,false,SP500
+JBHT,J.B. Hunt,US,Industrials,false,false,SP500
+JBL,Jabil,US,Information Technology,false,false,SP500
+JKHY,Jack Henry & Associates,US,Financials,false,false,SP500
+J,Jacobs Solutions,US,Industrials,false,false,SP500
+JNJ,Johnson & Johnson,US,Health Care,false,false,SP500
+JCI,Johnson Controls,US,Industrials,false,false,SP500
+JPM,JPMorgan Chase,US,Financials,false,false,SP500
+KVUE,Kenvue,US,Consumer Staples,false,false,SP500
+KDP,Keurig Dr Pepper,US,Consumer Staples,false,false,SP500
+KEY,KeyCorp,US,Financials,false,false,SP500
+KEYS,Keysight Technologies,US,Information Technology,false,false,SP500
+KMB,Kimberly-Clark,US,Consumer Staples,false,false,SP500
+KIM,Kimco Realty,US,Real Estate,false,false,SP500
+KMI,Kinder Morgan,US,Energy,false,false,SP500
+KKR,KKR & Co.,US,Financials,false,false,SP500
+KLAC,KLA Corporation,US,Information Technology,false,false,SP500
+KHC,Kraft Heinz,US,Consumer Staples,false,false,SP500
+KR,Kroger,US,Consumer Staples,false,false,SP500
+LHX,L3Harris,US,Industrials,false,false,SP500
+LH,Labcorp,US,Health Care,false,false,SP500
+LRCX,Lam Research,US,Information Technology,false,false,SP500
+LVS,Las Vegas Sands,US,Consumer Discretionary,false,false,SP500
+LDOS,Leidos,US,Industrials,false,false,SP500
+LEN,Lennar,US,Consumer Discretionary,false,false,SP500
+LII,Lennox International,US,Industrials,false,false,SP500
+LLY,Lilly (Eli),US,Health Care,false,false,SP500
+LIN,Linde plc,US,Materials,false,false,SP500
+LYV,Live Nation Entertainment,US,Communication Services,false,false,SP500
+LMT,Lockheed Martin,US,Industrials,false,false,SP500
+L,Loews Corporation,US,Financials,false,false,SP500
+LOW,Lowe's,US,Consumer Discretionary,false,false,SP500
+LULU,Lululemon Athletica,US,Consumer Discretionary,false,false,SP500
+LITE,Lumentum,US,Information Technology,false,false,SP500
+LYB,LyondellBasell,US,Materials,false,false,SP500
+MTB,M&T Bank,US,Financials,false,false,SP500
+MPC,Marathon Petroleum,US,Energy,false,false,SP500
+MAR,Marriott International,US,Consumer Discretionary,false,false,SP500
+MRSH,Marsh McLennan,US,Financials,false,false,SP500
+MLM,Martin Marietta Materials,US,Materials,false,false,SP500
+MRVL,Marvell Technology,US,Information Technology,false,false,SP500
+MAS,Masco,US,Industrials,false,false,SP500
+MA,Mastercard,US,Financials,false,false,SP500
+MKC,McCormick & Company,US,Consumer Staples,false,false,SP500
+MCD,McDonald's,US,Consumer Discretionary,false,false,SP500
+MCK,McKesson Corporation,US,Health Care,false,false,SP500
+MDT,Medtronic,US,Health Care,false,false,SP500
+MRK,Merck & Co.,US,Health Care,false,false,SP500
+META,Meta Platforms,US,Communication Services,false,false,SP500
+MET,MetLife,US,Financials,false,false,SP500
+MTD,Mettler Toledo,US,Health Care,false,false,SP500
+MGM,MGM Resorts,US,Consumer Discretionary,false,false,SP500
+MCHP,Microchip Technology,US,Information Technology,false,false,SP500
+MU,Micron Technology,US,Information Technology,false,false,SP500
+MSFT,Microsoft,US,Information Technology,false,false,SP500
+MAA,Mid-America Apartment Communities,US,Real Estate,false,false,SP500
+MRNA,Moderna,US,Health Care,false,false,SP500
+TAP,Molson Coors Beverage Company,US,Consumer Staples,false,false,SP500
+MDLZ,Mondelez International,US,Consumer Staples,false,false,SP500
+MPWR,Monolithic Power Systems,US,Information Technology,false,false,SP500
+MNST,Monster Beverage,US,Consumer Staples,false,false,SP500
+MCO,Moody's Corporation,US,Financials,false,false,SP500
+MS,Morgan Stanley,US,Financials,false,false,SP500
+MOS,Mosaic Company (The),US,Materials,false,false,SP500
+MSI,Motorola Solutions,US,Information Technology,false,false,SP500
+MSCI,MSCI,US,Financials,false,false,SP500
+NDAQ,"Nasdaq, Inc.",US,Financials,false,false,SP500
+NTAP,NetApp,US,Information Technology,false,false,SP500
+NFLX,Netflix,US,Communication Services,false,false,SP500
+NEM,Newmont,US,Materials,false,false,SP500
+NWSA,News Corp (Class A),US,Communication Services,false,false,SP500
+NWS,News Corp (Class B),US,Communication Services,false,false,SP500
+NEE,NextEra Energy,US,Utilities,false,false,SP500
+NKE,"Nike, Inc.",US,Consumer Discretionary,false,false,SP500
+NI,NiSource,US,Utilities,false,false,SP500
+NDSN,Nordson Corporation,US,Industrials,false,false,SP500
+NSC,Norfolk Southern,US,Industrials,false,false,SP500
+NTRS,Northern Trust,US,Financials,false,false,SP500
+NOC,Northrop Grumman,US,Industrials,false,false,SP500
+NCLH,Norwegian Cruise Line Holdings,US,Consumer Discretionary,false,false,SP500
+NRG,NRG Energy,US,Utilities,false,false,SP500
+NUE,Nucor,US,Materials,false,false,SP500
+NVDA,Nvidia,US,Information Technology,false,false,SP500
+NVR,"NVR, Inc.",US,Consumer Discretionary,false,false,SP500
+NXPI,NXP Semiconductors,US,Information Technology,false,false,SP500
+ORLY,O'Reilly Automotive,US,Consumer Discretionary,false,false,SP500
+OXY,Occidental Petroleum,US,Energy,false,false,SP500
+ODFL,Old Dominion,US,Industrials,false,false,SP500
+OMC,Omnicom Group,US,Communication Services,false,false,SP500
+ON,ON Semiconductor,US,Information Technology,false,false,SP500
+OKE,Oneok,US,Energy,false,false,SP500
+ORCL,Oracle Corporation,US,Information Technology,false,false,SP500
+OTIS,Otis Worldwide,US,Industrials,false,false,SP500
+PCAR,Paccar,US,Industrials,false,false,SP500
+PKG,Packaging Corporation of America,US,Materials,false,false,SP500
+PLTR,Palantir Technologies,US,Information Technology,false,false,SP500
+PANW,Palo Alto Networks,US,Information Technology,false,false,SP500
+PSKY,Paramount Skydance Corporation,US,Communication Services,false,false,SP500
+PH,Parker Hannifin,US,Industrials,false,false,SP500
+PAYX,Paychex,US,Industrials,false,false,SP500
+PYPL,PayPal,US,Financials,false,false,SP500
+PNR,Pentair,US,Industrials,false,false,SP500
+PEP,PepsiCo,US,Consumer Staples,false,false,SP500
+PFE,Pfizer,US,Health Care,false,false,SP500
+PCG,PG&E Corporation,US,Utilities,false,false,SP500
+PM,Philip Morris International,US,Consumer Staples,false,false,SP500
+PSX,Phillips 66,US,Energy,false,false,SP500
+PNW,Pinnacle West Capital,US,Utilities,false,false,SP500
+PNC,PNC Financial Services,US,Financials,false,false,SP500
+PPG,PPG Industries,US,Materials,false,false,SP500
+PPL,PPL Corporation,US,Utilities,false,false,SP500
+PFG,Principal Financial Group,US,Financials,false,false,SP500
+PG,Procter & Gamble,US,Consumer Staples,false,false,SP500
+PGR,Progressive Corporation,US,Financials,false,false,SP500
+PLD,Prologis,US,Real Estate,false,false,SP500
+PRU,Prudential Financial,US,Financials,false,false,SP500
+PEG,Public Service Enterprise Group,US,Utilities,false,false,SP500
+PTC,PTC Inc.,US,Information Technology,false,false,SP500
+PSA,Public Storage,US,Real Estate,false,false,SP500
+PHM,PulteGroup,US,Consumer Discretionary,false,false,SP500
+PWR,Quanta Services,US,Industrials,false,false,SP500
+QCOM,Qualcomm,US,Information Technology,false,false,SP500
+DGX,Quest Diagnostics,US,Health Care,false,false,SP500
+Q,Qnity Electronics,US,Information Technology,false,false,SP500
+RL,Ralph Lauren Corporation,US,Consumer Discretionary,false,false,SP500
+RJF,Raymond James Financial,US,Financials,false,false,SP500
+RDDT,Reddit,US,Communication Services,false,false,SP500
+RTX,RTX Corporation,US,Industrials,false,false,SP500
+O,Realty Income,US,Real Estate,false,false,SP500
+REG,Regency Centers,US,Real Estate,false,false,SP500
+REGN,Regeneron Pharmaceuticals,US,Health Care,false,false,SP500
+RF,Regions Financial Corporation,US,Financials,false,false,SP500
+RSG,Republic Services,US,Industrials,false,false,SP500
+RMD,ResMed|,US,Health Care,false,false,SP500
+RVTY,Revvity,US,Health Care,false,false,SP500
+HOOD,Robinhood Markets,US,Financials,false,false,SP500
+ROK,Rockwell Automation,US,Industrials,false,false,SP500
+ROL,"Rollins, Inc.",US,Industrials,false,false,SP500
+ROP,Roper Technologies,US,Information Technology,false,false,SP500
+ROST,Ross Stores,US,Consumer Discretionary,false,false,SP500
+RCL,Royal Caribbean Group,US,Consumer Discretionary,false,false,SP500
+SPGI,S&P Global,US,Financials,false,false,SP500
+CRM,Salesforce,US,Information Technology,false,false,SP500
+SNDK,Sandisk,US,Information Technology,false,false,SP500
+SBAC,SBA Communications,US,Real Estate,false,false,SP500
+SLB,Schlumberger,US,Energy,false,false,SP500
+STX,Seagate Technology,US,Information Technology,false,false,SP500
+SRE,Sempra,US,Utilities,false,false,SP500
+NOW,ServiceNow,US,Information Technology,false,false,SP500
+SHW,Sherwin-Williams,US,Materials,false,false,SP500
+SPG,Simon Property Group,US,Real Estate,false,false,SP500
+SWKS,Skyworks Solutions,US,Information Technology,false,false,SP500
+SJM,J.M. Smucker Company (The),US,Consumer Staples,false,false,SP500
+SW,Smurfit Westrock,US,Materials,false,false,SP500
+SNA,Snap-on,US,Industrials,false,false,SP500
+SOLV,Solventum,US,Health Care,false,false,SP500
+SO,Southern Company,US,Utilities,false,false,SP500
+LUV,Southwest Airlines,US,Industrials,false,false,SP500
+SWK,Stanley Black & Decker,US,Industrials,false,false,SP500
+SBUX,Starbucks,US,Consumer Discretionary,false,false,SP500
+STT,State Street Corporation,US,Financials,false,false,SP500
+STLD,Steel Dynamics,US,Materials,false,false,SP500
+STE,Steris,US,Health Care,false,false,SP500
+SYK,Stryker Corporation,US,Health Care,false,false,SP500
+SMCI,Supermicro,US,Information Technology,false,false,SP500
+SYF,Synchrony Financial,US,Financials,false,false,SP500
+SNPS,Synopsys,US,Information Technology,false,false,SP500
+SYY,Sysco,US,Consumer Staples,false,false,SP500
+TMUS,T-Mobile US,US,Communication Services,false,false,SP500
+TROW,T. Rowe Price,US,Financials,false,false,SP500
+TTWO,Take-Two Interactive,US,Communication Services,false,false,SP500
+TPR,"Tapestry, Inc.",US,Consumer Discretionary,false,false,SP500
+TRGP,Targa Resources,US,Energy,false,false,SP500
+TGT,Target Corporation,US,Consumer Staples,false,false,SP500
+TEL,TE Connectivity,US,Information Technology,false,false,SP500
+TDY,Teledyne Technologies,US,Information Technology,false,false,SP500
+TER,Teradyne,US,Information Technology,false,false,SP500
+TSLA,"Tesla, Inc.",US,Consumer Discretionary,false,false,SP500
+TXN,Texas Instruments,US,Information Technology,false,false,SP500
+TPL,Texas Pacific Land Corporation,US,Energy,false,false,SP500
+TXT,Textron,US,Industrials,false,false,SP500
+TMO,Thermo Fisher Scientific,US,Health Care,false,false,SP500
+TJX,TJX Companies,US,Consumer Discretionary,false,false,SP500
+TKO,TKO Group Holdings,US,Communication Services,false,false,SP500
+TTD,Trade Desk (The),US,Communication Services,false,false,SP500
+TSCO,Tractor Supply,US,Consumer Discretionary,false,false,SP500
+TT,Trane Technologies,US,Industrials,false,false,SP500
+TDG,TransDigm Group,US,Industrials,false,false,SP500
+TRV,Travelers Companies (The),US,Financials,false,false,SP500
+TRMB,Trimble Inc.,US,Information Technology,false,false,SP500
+TFC,Truist Financial,US,Financials,false,false,SP500
+TYL,Tyler Technologies,US,Information Technology,false,false,SP500
+TSN,Tyson Foods,US,Consumer Staples,false,false,SP500
+USB,U.S. Bancorp,US,Financials,false,false,SP500
+UBER,Uber,US,Industrials,false,false,SP500
+UDR,"UDR, Inc.",US,Real Estate,false,false,SP500
+ULTA,Ulta Beauty,US,Consumer Discretionary,false,false,SP500
+UNP,Union Pacific Corporation,US,Industrials,false,false,SP500
+UAL,United Airlines Holdings,US,Industrials,false,false,SP500
+UPS,United Parcel Service,US,Industrials,false,false,SP500
+URI,United Rentals,US,Industrials,false,false,SP500
+UNH,UnitedHealth Group,US,Health Care,false,false,SP500
+UHS,Universal Health Services,US,Health Care,false,false,SP500
+VLO,Valero Energy,US,Energy,false,false,SP500
+VEEV,Veeva Systems,US,Health Care,false,false,SP500
+VTR,Ventas,US,Real Estate,false,false,SP500
+VLTO,Veralto,US,Industrials,false,false,SP500
+VRSN,Verisign,US,Information Technology,false,false,SP500
+VRSK,Verisk Analytics,US,Industrials,false,false,SP500
+VZ,Verizon,US,Communication Services,false,false,SP500
+VRTX,Vertex Pharmaceuticals,US,Health Care,false,false,SP500
+VRT,Vertiv,US,Industrials,false,false,SP500
+VTRS,Viatris,US,Health Care,false,false,SP500
+VICI,Vici Properties,US,Real Estate,false,false,SP500
+V,Visa Inc.,US,Financials,false,false,SP500
+VST,Vistra Corp.,US,Utilities,false,false,SP500
+VMRK,Vivmark Residential,US,Real Estate,false,false,SP500
+VMC,Vulcan Materials Company,US,Materials,false,false,SP500
+WRB,W. R. Berkley Corporation,US,Financials,false,false,SP500
+GWW,W. W. Grainger,US,Industrials,false,false,SP500
+WAB,Wabtec,US,Industrials,false,false,SP500
+WMT,Walmart,US,Consumer Staples,false,false,SP500
+DIS,Walt Disney Company (The),US,Communication Services,false,false,SP500
+WBD,Warner Bros. Discovery,US,Communication Services,false,false,SP500
+WM,Waste Management,US,Industrials,false,false,SP500
+WAT,Waters Corporation,US,Health Care,false,false,SP500
+WEC,WEC Energy Group,US,Utilities,false,false,SP500
+WFC,Wells Fargo,US,Financials,false,false,SP500
+WELL,Welltower,US,Real Estate,false,false,SP500
+WST,West Pharmaceutical Services,US,Health Care,false,false,SP500
+WDC,Western Digital,US,Information Technology,false,false,SP500
+WY,Weyerhaeuser,US,Real Estate,false,false,SP500
+WSM,"Williams-Sonoma, Inc.",US,Consumer Discretionary,false,false,SP500
+WMB,Williams Companies,US,Energy,false,false,SP500
+WTW,Willis Towers Watson,US,Financials,false,false,SP500
+WDAY,"Workday, Inc.",US,Information Technology,false,false,SP500
+WYNN,Wynn Resorts,US,Consumer Discretionary,false,false,SP500
+XEL,Xcel Energy,US,Utilities,false,false,SP500
+XYL,Xylem Inc.,US,Industrials,false,false,SP500
+YUM,Yum! Brands,US,Consumer Discretionary,false,false,SP500
+ZBRA,Zebra Technologies,US,Information Technology,false,false,SP500
+ZBH,Zimmer Biomet,US,Health Care,false,false,SP500
+ZTS,Zoetis,US,Health Care,false,false,SP500
+SAP.DE,SAP SE,EU,,false,false,EU_CURATED
+SIE.DE,Siemens AG,EU,,false,false,EU_CURATED
+ALV.DE,Allianz SE,EU,,false,false,EU_CURATED
+BAS.DE,BASF SE,EU,,false,false,EU_CURATED
+BMW.DE,BMW AG,EU,,false,false,EU_CURATED
+VOW3.DE,Volkswagen AG,EU,,false,false,EU_CURATED
+DTE.DE,Deutsche Telekom AG,EU,,false,false,EU_CURATED
+MBG.DE,Mercedes-Benz Group AG,EU,,false,false,EU_CURATED
+BAYN.DE,Bayer AG,EU,,false,false,EU_CURATED
+ADS.DE,Adidas AG,EU,,false,false,EU_CURATED
+MC.PA,LVMH,EU,,false,false,EU_CURATED
+OR.PA,L'Oreal SA,EU,,false,false,EU_CURATED
+SAN.PA,Sanofi SA,EU,,false,false,EU_CURATED
+AIR.PA,Airbus SE,EU,,false,false,EU_CURATED
+BNP.PA,BNP Paribas SA,EU,,false,false,EU_CURATED
+TTE.PA,TotalEnergies SE,EU,,false,false,EU_CURATED
+AI.PA,Air Liquide SA,EU,,false,false,EU_CURATED
+DG.PA,Vinci SA,EU,,false,false,EU_CURATED
+ASML.AS,ASML Holding NV,EU,,false,false,EU_CURATED
+ADYEN.AS,Adyen NV,EU,,false,false,EU_CURATED
+INGA.AS,ING Groep NV,EU,,false,false,EU_CURATED
+HSBA.L,HSBC Holdings plc,EU,,false,false,EU_CURATED
+AZN.L,AstraZeneca plc,EU,,false,false,EU_CURATED
+ULVR.L,Unilever plc,EU,,false,false,EU_CURATED
+BP.L,BP plc,EU,,false,false,EU_CURATED
+SHEL.L,Shell plc,EU,,false,false,EU_CURATED
+GSK.L,GSK plc,EU,,false,false,EU_CURATED
+RIO.L,Rio Tinto plc,EU,,false,false,EU_CURATED
+ENI.MI,Eni SpA,EU,,false,false,EU_CURATED
+ISP.MI,Intesa Sanpaolo SpA,EU,,false,false,EU_CURATED
+ENEL.MI,Enel SpA,EU,,false,false,EU_CURATED
+600519.SS,Kweichow Moutai Co Ltd,CN,,false,false,CSI300_CURATED
+601318.SS,Ping An Insurance Group,CN,,false,false,CSI300_CURATED
+600036.SS,China Merchants Bank,CN,,false,false,CSI300_CURATED
+601988.SS,Bank of China,CN,,false,false,CSI300_CURATED
+600028.SS,China Petroleum & Chemical (Sinopec),CN,,false,false,CSI300_CURATED
+601857.SS,PetroChina Co Ltd,CN,,false,false,CSI300_CURATED
+000858.SZ,Wuliangye Yibin Co Ltd,CN,,false,false,CSI300_CURATED
+000333.SZ,Midea Group Co Ltd,CN,,false,false,CSI300_CURATED
+300750.SZ,Contemporary Amperex Technology (CATL),CN,,false,false,CSI300_CURATED
+002594.SZ,BYD Co Ltd,CN,,false,false,CSI300_CURATED
+0700.HK,Tencent Holdings Ltd,HK,,false,false,HK_CURATED
+9988.HK,Alibaba Group Holding Ltd,HK,,false,false,HK_CURATED
+0941.HK,China Mobile Ltd,HK,,false,false,HK_CURATED
+1299.HK,AIA Group Ltd,HK,,false,false,HK_CURATED
+0005.HK,HSBC Holdings plc,HK,,false,false,HK_CURATED
+3690.HK,Meituan,HK,,false,false,HK_CURATED
+1810.HK,Xiaomi Corp,HK,,false,false,HK_CURATED
+2330.TW,Taiwan Semiconductor Manufacturing Co,TW,,false,false,TAIWAN50_CURATED
+2317.TW,Hon Hai Precision Industry (Foxconn),TW,,false,false,TAIWAN50_CURATED
+2454.TW,MediaTek Inc,TW,,false,false,TAIWAN50_CURATED
+2308.TW,Delta Electronics Inc,TW,,false,false,TAIWAN50_CURATED
+1301.TW,Formosa Plastics Corp,TW,,false,false,TAIWAN50_CURATED
+2412.TW,Chunghwa Telecom Co Ltd,TW,,false,false,TAIWAN50_CURATED
+2882.TW,Cathay Financial Holding Co,TW,,false,false,TAIWAN50_CURATED
+1216.TW,Uni-President Enterprises Corp,TW,,false,false,TAIWAN50_CURATED
+D05.SI,DBS Group Holdings Ltd,SG,,false,false,STI30_CURATED
+O39.SI,Oversea-Chinese Banking Corp,SG,,false,false,STI30_CURATED
+U11.SI,United Overseas Bank Ltd,SG,,false,false,STI30_CURATED
+Z74.SI,Singtel,SG,,false,false,STI30_CURATED
+C6L.SI,Singapore Airlines Ltd,SG,,false,false,STI30_CURATED
+C38U.SI,CapitaLand Integrated Commercial Trust,SG,,false,false,STI30_CURATED
+A17U.SI,Ascendas REIT,SG,,false,false,STI30_CURATED
+Y92.SI,Thai Beverage PCL,SG,,false,false,STI30_CURATED
+SPY,SPDR S&P 500 ETF Trust,US,,false,true,CURATED_ETF
+VOO,Vanguard S&P 500 ETF,US,,false,true,CURATED_ETF
+IVV,iShares Core S&P 500 ETF,US,,false,true,CURATED_ETF
+QQQ,Invesco QQQ Trust,US,,false,true,CURATED_ETF
+DIA,SPDR Dow Jones Industrial Average ETF,US,,false,true,CURATED_ETF
+VTI,Vanguard Total Stock Market ETF,US,,false,true,CURATED_ETF
+VEA,Vanguard FTSE Developed Markets ETF,US,,false,true,CURATED_ETF
+VWO,Vanguard FTSE Emerging Markets ETF,US,,false,true,CURATED_ETF
+EFA,iShares MSCI EAFE ETF,US,,false,true,CURATED_ETF
+EEM,iShares MSCI Emerging Markets ETF,US,,false,true,CURATED_ETF
+IWM,iShares Russell 2000 ETF,US,,false,true,CURATED_ETF
+XLK,Technology Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLF,Financial Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLE,Energy Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLV,Health Care Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLY,Consumer Discretionary Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLP,Consumer Staples Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLI,Industrial Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLU,Utilities Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLB,Materials Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLRE,Real Estate Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+XLC,Communication Services Select Sector SPDR Fund,US,,false,true,CURATED_ETF
+GLD,SPDR Gold Shares,US,,false,true,CURATED_ETF
+SLV,iShares Silver Trust,US,,false,true,CURATED_ETF
+TLT,iShares 20+ Year Treasury Bond ETF,US,,false,true,CURATED_ETF
+HYG,iShares iBoxx High Yield Corporate Bond ETF,US,,false,true,CURATED_ETF
+LQD,iShares iBoxx Investment Grade Corporate Bond ETF,US,,false,true,CURATED_ETF
+AGG,iShares Core U.S. Aggregate Bond ETF,US,,false,true,CURATED_ETF
+BND,Vanguard Total Bond Market ETF,US,,false,true,CURATED_ETF
+VNQ,Vanguard Real Estate ETF,US,,false,true,CURATED_ETF
+ARKK,ARK Innovation ETF,US,,false,true,CURATED_ETF
+SOXX,iShares Semiconductor ETF,US,,false,true,CURATED_ETF
+SMH,VanEck Semiconductor ETF,US,,false,true,CURATED_ETF
+EWJ,iShares MSCI Japan ETF,US,,false,true,CURATED_ETF
+EWZ,iShares MSCI Brazil ETF,US,,false,true,CURATED_ETF
+EWT,iShares MSCI Taiwan ETF,US,,false,true,CURATED_ETF
+EWH,iShares MSCI Hong Kong ETF,US,,false,true,CURATED_ETF
+FXI,iShares China Large-Cap ETF,US,,false,true,CURATED_ETF
+INDA,iShares MSCI India ETF,US,,false,true,CURATED_ETF
+EWY,iShares MSCI South Korea ETF,US,,false,true,CURATED_ETF
+^GSPC,S&P 500 Index,US,,true,false,INDEX
+^IXIC,NASDAQ Composite Index,US,,true,false,INDEX
+^STOXX,STOXX Europe 600 Index,EU,,true,false,INDEX
+000001.SS,Shanghai Composite Index,CN,,true,false,INDEX
+^TWII,Taiwan Weighted Index,TW,,true,false,INDEX
+^STI,Straits Times Index,SG,,true,false,INDEX
+^HSI,Hang Seng Index,HK,,true,false,INDEX
