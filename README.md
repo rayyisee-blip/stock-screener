@@ -33,16 +33,31 @@ steps in order.
 2. Click **New Project**. Pick any name and a strong database password -
    **write this password down**, you'll need it in a moment.
 3. Wait a minute or two for the project to finish setting up.
-4. Once it's ready, go to **Project Settings** (the gear icon) → **Database**
-   → **Connection string** → copy the **URI** value. It looks like:
+4. Once it's ready, click the **Connect** button (near the project name at
+   the top of the dashboard).
+5. In the panel that opens, under **Connection Method** choose
+   **Session pooler** (not "Direct connection" - see the warning box
+   below for why), keep **Type** set to **URI**, and copy the string. It
+   looks like:
 
    ```
-   postgresql://postgres:[YOUR-PASSWORD]@db.xxxxxxxxxxxx.supabase.co:5432/postgres
+   postgresql://postgres.xxxxxxxxxxxxxxxxxxxx:[YOUR-PASSWORD]@aws-0-REGION.pooler.supabase.com:5432/postgres
    ```
 
    Replace `[YOUR-PASSWORD]` with the password from step 2. Save this whole
    string somewhere - it's your `DATABASE_URL` and you'll paste it in two
    more places below.
+
+   > **Why Session pooler and not "Direct connection"?** Supabase's Direct
+   > connection uses IPv6 by default. GitHub Actions and Streamlit
+   > Community Cloud (the two places this `DATABASE_URL` gets used) are
+   > both IPv4-only, so a Direct connection string fails there with an
+   > error like `could not translate host name`. The Session pooler
+   > connection is IPv4-compatible and works from both. (If you ever see
+   > that exact error message after following this README, this is almost
+   > always the cause - double check you copied the Session pooler string,
+   > not the Direct one, and that you didn't accidentally leave a
+   > placeholder like `xxxxxxxxxxxx` in the hostname.)
 
 ---
 
@@ -117,12 +132,18 @@ early.
 
    - macOS/Linux (bash/zsh):
      ```bash
-     export DATABASE_URL="postgresql://postgres:yourpassword@db.xxxx.supabase.co:5432/postgres"
+     export DATABASE_URL="postgresql://postgres.xxxxxxxxxxxxxxxxxxxx:yourpassword@aws-0-region.pooler.supabase.com:5432/postgres"
      ```
    - Windows (PowerShell):
      ```powershell
-     $env:DATABASE_URL = "postgresql://postgres:yourpassword@db.xxxx.supabase.co:5432/postgres"
+     $env:DATABASE_URL = "postgresql://postgres.xxxxxxxxxxxxxxxxxxxx:yourpassword@aws-0-region.pooler.supabase.com:5432/postgres"
      ```
+
+   (Running locally, on your own machine, you *can* use the Direct
+   connection string instead if you prefer - the IPv4/IPv6 issue only
+   applies to GitHub Actions and Streamlit Cloud. The Session pooler
+   string works fine locally too, though, so there's no need to keep two
+   different strings around.)
 
 5. Run the smallest scope first:
 
@@ -157,11 +178,13 @@ updated automatically on their own schedule - you don't need to run
 1. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with
    your GitHub account (free).
 2. Click **New app**, and pick this repo, the branch you want to deploy
-   (usually `main`), and set the **Main file path** to `app/main.py`.
-3. Before deploying, open **Advanced settings** → **Secrets**, and paste:
+   (check what your repo's default branch is actually called - it may be
+   `main` or `master`), and set the **Main file path** to `app/main.py`.
+3. Before deploying, open **Advanced settings** → **Secrets**, and paste
+   (as TOML - note the `=` and quotes, this is not YAML):
 
    ```toml
-   DATABASE_URL = "postgresql://postgres:yourpassword@db.xxxx.supabase.co:5432/postgres"
+   DATABASE_URL = "postgresql://postgres.xxxxxxxxxxxxxxxxxxxx:yourpassword@aws-0-region.pooler.supabase.com:5432/postgres"
    ```
 
    (Same connection string as before - Streamlit Cloud reads this into

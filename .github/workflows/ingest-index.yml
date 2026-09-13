@@ -3,6 +3,9 @@
 # the US market closes (16:00 ET, which is 20:00 UTC during daylight saving
 # or 21:00 UTC in standard time), with a buffer so the day's final prices
 # have settled.
+#
+# (Re-committed to make GitHub re-index this workflow after the repo was
+# switched from private to public.)
 name: Ingest - Index
 
 on:

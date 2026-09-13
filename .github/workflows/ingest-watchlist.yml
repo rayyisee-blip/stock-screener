@@ -1,5 +1,9 @@
 # Refreshes just the watchlist tickers - the smallest, fastest scope.
 #
+# (Re-committed to make GitHub re-index this workflow after the repo was
+# switched from private to public - Actions doesn't always pick up
+# workflow files retroactively without a new push.)
+#
 # Runs every 30 minutes, but only Monday-Friday and only roughly 00:00-21:59
 # UTC. That window comfortably covers all five target markets' trading
 # hours (Singapore/Hong Kong/Taiwan/China open first, then Europe, then the

@@ -2,6 +2,9 @@
 # scope. Runs once a week, Saturday at 03:00 UTC, when no target market is
 # trading, so it doesn't compete with the daily/watchlist runs for the same
 # free API rate limits.
+#
+# (Re-committed to make GitHub re-index this workflow after the repo was
+# switched from private to public.)
 name: Ingest - Full
 
 on:
