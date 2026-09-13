@@ -312,3 +312,10 @@ def get_all_active_tickers_with_names() -> pd.DataFrame:
     """Every active ticker + name, used to populate the Detail tab's ticker picker."""
     rows = _query("SELECT ticker, name FROM universe WHERE active = TRUE ORDER BY ticker")
     return pd.DataFrame(rows, columns=["ticker", "name"])
+
+
+@st.cache_data(ttl=CACHE_TTL_SECONDS)
+def get_ticker_description(ticker: str) -> str:
+    """A brief 'what does this company do' summary, fetched once by the ingest pipeline (see ingest/universe.py)."""
+    rows = _query("SELECT description FROM universe WHERE ticker = %s", (ticker,))
+    return rows[0][0] if rows and rows[0][0] else None

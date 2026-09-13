@@ -162,6 +162,7 @@ def _process_one_ticker(conn, ticker: str, company_name: str, price_period: str,
         return
     prices_module.upsert_ohlcv(conn, ticker, price_data[ticker], source="yfinance")
     universe_module.refresh_market_cap(conn, ticker)
+    universe_module.refresh_description(conn, ticker)
 
     history_df = _load_price_history_from_db(conn, ticker)
     history_df = history_df.rename(columns=str.lower)

@@ -21,6 +21,11 @@ ROW_BASED_PERIODS = {"1D": 1, "5D": 5, "10D": 10}
 MONTH_BASED_PERIODS = {"1M": 1, "3M": 3, "6M": 6, "1Y": 12}
 ALL_PERIODS = list(ROW_BASED_PERIODS) + list(MONTH_BASED_PERIODS) + ["YTD"]
 
+# The windows offered on the "Daily breakdown" view below - a subset of
+# ALL_PERIODS (10D/1Y/YTD add little there and would just make the table
+# longer without changing the point: seeing each day's move on its own).
+BREAKDOWN_WINDOWS = ["1D", "5D", "1M", "3M", "6M"]
+
 
 def _pct_change_for_one_period(ticker_history: pd.DataFrame, period: str):
     """
@@ -69,10 +74,7 @@ def _pct_change_for_one_period(ticker_history: pd.DataFrame, period: str):
     return (latest_close - past_close) / past_close * 100
 
 
-def _build_performance_table(tickers: list, periods: list) -> pd.DataFrame:
-    history = get_price_history_for_tickers(tickers, lookback_days=400)
-    history["date"] = pd.to_datetime(history["date"])
-
+def _build_performance_table(history: pd.DataFrame, tickers: list, periods: list) -> pd.DataFrame:
     rows = []
     for ticker in tickers:
         ticker_history = history[history["ticker"] == ticker].sort_values("date")
@@ -84,6 +86,37 @@ def _build_performance_table(tickers: list, periods: list) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def _daily_changes_for_ticker(ticker_history: pd.DataFrame, window: str) -> pd.DataFrame:
+    """
+    One row per trading day within `window` (e.g. "5D", "1M"), each with
+    THAT DAY's own % change from the previous close - not the cumulative
+    change over the whole window. This is what answers "Monday +5%,
+    Tuesday -12%" instead of just "net +... % over the period".
+    """
+    if ticker_history.empty:
+        return pd.DataFrame(columns=["Date", "Close", "% Change"])
+
+    ordered = ticker_history.sort_values("date").reset_index(drop=True)
+    ordered["% Change"] = ordered["close"].pct_change() * 100
+    latest_date = ordered["date"].iloc[-1]
+
+    if window in ROW_BASED_PERIODS:
+        window_rows = ordered.tail(ROW_BASED_PERIODS[window])
+    elif window in MONTH_BASED_PERIODS:
+        start_date = latest_date - pd.DateOffset(months=MONTH_BASED_PERIODS[window])
+        window_rows = ordered[ordered["date"] > start_date]
+    else:
+        window_rows = ordered.tail(1)
+
+    return window_rows[["date", "close", "% Change"]].rename(columns={"date": "Date", "close": "Close"})
+
+
+def _color_by_sign(value):
+    if value is None or pd.isna(value):
+        return ""
+    return "color: #1a7431; font-weight: 600" if value >= 0 else "color: #b33939; font-weight: 600"
+
+
 def render():
     st.subheader("Performance")
     st.caption("% change in closing price, computed from stored prices - not fetched live.")
@@ -93,21 +126,50 @@ def render():
         st.info("Your watchlist is empty - add tickers on the Watchlist tab to see their performance here.")
         return
 
+    history = get_price_history_for_tickers(watchlist_tickers, lookback_days=400)
+    history["date"] = pd.to_datetime(history["date"])
+
     selected_periods = st.multiselect(
         "Periods to show", ALL_PERIODS, default=["1D", "5D", "1M", "YTD"], key="performance_periods"
     )
     if not selected_periods:
         st.info("Pick at least one period above.")
+    else:
+        df = _build_performance_table(history, watchlist_tickers, selected_periods)
+        styled = df.style.map(_color_by_sign, subset=selected_periods).format(
+            {period: "{:+.2f}%" for period in selected_periods}, na_rep="N/A"
+        )
+        st.dataframe(styled, width="stretch", hide_index=True)
+
+    # --- Daily breakdown: each day's own move, not the net over the window ---
+    st.divider()
+    st.markdown("#### Daily breakdown")
+    st.caption(
+        "The individual % change for each trading day within the chosen window "
+        "(e.g. Monday +5%, Tuesday -12%) - not the overall change across the whole window."
+    )
+
+    breakdown_col1, breakdown_col2 = st.columns(2)
+    with breakdown_col1:
+        breakdown_ticker = st.selectbox("Ticker", watchlist_tickers, key="performance_breakdown_ticker")
+    with breakdown_col2:
+        breakdown_window = st.selectbox(
+            "Window", BREAKDOWN_WINDOWS, index=BREAKDOWN_WINDOWS.index("5D"), key="performance_breakdown_window"
+        )
+
+    ticker_history = history[history["ticker"] == breakdown_ticker]
+    daily_df = _daily_changes_for_ticker(ticker_history, breakdown_window)
+
+    if daily_df.empty:
+        st.info(f"Not enough stored price history yet for {breakdown_ticker}.")
         return
 
-    df = _build_performance_table(watchlist_tickers, selected_periods)
-
-    def _color_by_sign(value):
-        if value is None or pd.isna(value):
-            return ""
-        return "color: #1a7431; font-weight: 600" if value >= 0 else "color: #b33939; font-weight: 600"
-
-    styled = df.style.map(_color_by_sign, subset=selected_periods).format(
-        {period: "{:+.2f}%" for period in selected_periods}, na_rep="N/A"
+    display_df = daily_df.copy()
+    display_df["Date"] = display_df["Date"].dt.strftime("%a %Y-%m-%d")
+    styled_daily = display_df.style.map(_color_by_sign, subset=["% Change"]).format(
+        {"Close": "{:.2f}", "% Change": "{:+.2f}%"}, na_rep="N/A"
     )
-    st.dataframe(styled, width="stretch", hide_index=True)
+    st.dataframe(styled_daily, width="stretch", hide_index=True)
+
+    chart_data = daily_df.set_index("Date")[["% Change"]]
+    st.bar_chart(chart_data, width="stretch")

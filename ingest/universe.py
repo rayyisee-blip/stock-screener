@@ -157,6 +157,32 @@ def refresh_market_cap(conn, ticker: str) -> None:
         )
 
 
+def refresh_description(conn, ticker: str) -> None:
+    """
+    Fetch a brief "what does this company do" summary from yfinance and
+    store it - but only the first time. A business summary changes rarely,
+    and yfinance's full `.info` dict (the only place this field lives) is
+    a much heavier call than the `fast_info` used for market cap, so once
+    we have a description for a ticker we never fetch it again.
+    """
+    with conn.cursor() as cur:
+        cur.execute("SELECT description FROM universe WHERE ticker = %s", (ticker,))
+        row = cur.fetchone()
+    if row and row[0]:
+        return
+
+    try:
+        summary = yf.Ticker(ticker).info.get("longBusinessSummary")
+    except Exception as e:
+        logger.warning("Could not fetch description for %s: %s", ticker, e)
+        return
+    if not summary:
+        return
+
+    with conn.cursor() as cur:
+        cur.execute("UPDATE universe SET description = %s WHERE ticker = %s", (summary, ticker))
+
+
 def get_active_tickers(conn, tickers_only: list[str] = None) -> list[str]:
     """Return every active ticker in the universe, optionally filtered to a specific list."""
     with conn.cursor() as cur:

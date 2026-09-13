@@ -14,6 +14,7 @@ from app.data import (
     get_watchlist_tickers,
     remove_ticker_from_watchlist,
 )
+from app.formatting import color_by_rating, format_market_cap
 
 
 def render():
@@ -52,15 +53,15 @@ def render():
     # --- The watchlist table itself ------------------------------------
     df, _ = get_screener_page(tickers_only=watchlist_tickers, page_size=len(watchlist_tickers))
 
-    def _color_by_rating(label: str) -> str:
-        colors = {
-            "Strong Buy": "background-color: #1a7431; color: white",
-            "Buy": "background-color: #6fbf73; color: black",
-            "Neutral": "background-color: #bdbdbd; color: black",
-            "Sell": "background-color: #e59a9a; color: black",
-            "Strong Sell": "background-color: #b33939; color: white",
-        }
-        return colors.get(label, "")
-
-    styled = df.style.map(_color_by_rating, subset=["Rating"])
+    styled = (
+        df.style.map(color_by_rating, subset=["Rating"]).format(
+            {
+                "Market Cap": format_market_cap,
+                "Score": "{:.2f}",
+                "RSI (14)": "{:.2f}",
+                "% vs SMA50": "{:+.2f}%",
+            },
+            na_rep="N/A",
+        )
+    )
     st.dataframe(styled, width="stretch", hide_index=True)

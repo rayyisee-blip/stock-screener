@@ -7,6 +7,7 @@ Tab 1: Screener - a searchable/filterable table of the whole universe.
 import streamlit as st
 
 from app.data import get_filter_options, get_screener_page
+from app.formatting import color_by_rating, format_market_cap
 
 PAGE_SIZE = 50
 
@@ -75,17 +76,17 @@ def render():
 
     st.write(f"**{total_count}** tickers match these filters.")
 
-    def _color_by_rating(label: str) -> str:
-        colors = {
-            "Strong Buy": "background-color: #1a7431; color: white",
-            "Buy": "background-color: #6fbf73; color: black",
-            "Neutral": "background-color: #bdbdbd; color: black",
-            "Sell": "background-color: #e59a9a; color: black",
-            "Strong Sell": "background-color: #b33939; color: white",
-        }
-        return colors.get(label, "")
-
-    styled = df.style.map(_color_by_rating, subset=["Rating"])
+    styled = (
+        df.style.map(color_by_rating, subset=["Rating"]).format(
+            {
+                "Market Cap": format_market_cap,
+                "Score": "{:.2f}",
+                "RSI (14)": "{:.2f}",
+                "% vs SMA50": "{:+.2f}%",
+            },
+            na_rep="N/A",
+        )
+    )
     st.dataframe(styled, width="stretch", hide_index=True)
 
     # --- Pagination controls -----------------------------------------

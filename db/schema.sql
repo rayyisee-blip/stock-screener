@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS universe (
     name            TEXT,                    -- human-readable company/fund/index name
     market          TEXT NOT NULL,           -- 'US', 'EU', 'CN', 'HK', 'TW', 'SG'
     sector          TEXT,                    -- GICS-style sector, filled in from yfinance metadata where available
+    description     TEXT,                    -- brief "what does this company do" summary, fetched once from yfinance
     market_cap      NUMERIC,                 -- latest known market cap, in the instrument's local currency
     is_index        BOOLEAN NOT NULL DEFAULT FALSE,   -- true for things like ^GSPC, ^STI
     is_etf          BOOLEAN NOT NULL DEFAULT FALSE,   -- true for the curated ETF list

@@ -14,6 +14,7 @@ from app.data import (
     get_latest_rating,
     get_price_and_indicator_history,
     get_recent_news,
+    get_ticker_description,
     get_watchlist_tickers,
 )
 
@@ -41,6 +42,10 @@ def render():
         format_func=lambda t: f"{t} - {tickers_df.set_index('ticker').loc[t, 'name']}",
         key="detail_ticker",
     )
+
+    description = get_ticker_description(ticker)
+    if description:
+        st.caption(description)
 
     # --- Price chart with moving average overlays -----------------------
     st.markdown("#### Price with moving averages")
@@ -75,7 +80,7 @@ def render():
                     ],
                 }
             ).set_index("Bucket")
-            st.bar_chart(bucket_scores, width="stretch")
+            st.bar_chart(bucket_scores, width="stretch", horizontal=True)
 
     # --- Last 10 headlines --------------------------------------------
     st.markdown("#### Recent headlines")
